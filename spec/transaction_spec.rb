@@ -18,5 +18,8 @@ describe Transaction do
     transaction.deposit(6)
     expect(transaction.withdraw(5)).to eq 1
   end
-end
 
+  it 'should prevent withdrawal if funds are insufficient' do
+    expect{ transaction.withdraw(5) }.to raise_error 'Your funds are insufficient'
+  end
+end
