@@ -11,6 +11,20 @@
           null
         ]
       },
+      "/Users/sophiebrown/Projects/Week-10/bank-tech-test/spec/statement_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/sophiebrown/Projects/Week-10/bank-tech-test/lib/statement.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
       "/Users/sophiebrown/Projects/Week-10/bank-tech-test/spec/transaction_spec.rb": {
         "lines": [
           1,
@@ -18,14 +32,12 @@
           null,
           1,
           6,
-          3,
+          4,
           null,
           1,
           1,
           null,
           null,
-          1,
-          1,
           1,
           1,
           null,
@@ -63,39 +75,40 @@
           null,
           null,
           1,
-          4,
+          2,
+          2,
           null,
           null,
           1,
           2,
           null,
           1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
           1,
           null,
           null,
           1,
           null,
+          3,
+          null,
+          null,
+          null,
+          null,
+          3,
+          null,
+          null,
           1,
           null,
+          2,
           null,
           null,
           null,
-          1,
-          1,
+          null,
+          2,
           null,
           null
         ]
       }
     },
-    "timestamp": 1594648991
+    "timestamp": 1594651526
   }
 }

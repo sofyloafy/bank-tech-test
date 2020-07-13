@@ -14,7 +14,7 @@ class Transaction
 
   def withdraw(amount)
     raise 'Your funds are insufficient' if @balance < amount
-    
+
     @balance -= amount
     withdraw_confirm(amount)
   end
@@ -37,6 +37,5 @@ class Transaction
       balance: format('£%<balance>.2f', balance: @balance)
     }
     transaction_history.push(transaction)
-    p transaction_history
   end
 end
