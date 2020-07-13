@@ -6,19 +6,17 @@ describe Statement do
   let(:date) { Time.now.strftime('%d/%m/%Y') }
   let(:transaction_history) { [{ :balance => "£5.00", :credit => "£5.00", :date => date, :debit => "------" }] }
 
-
   it 'should print a header' do
     expect(statement.header).to eq " Date      || Credit || Debit || Balance"
   end
 
   describe '#format' do
-      let(:format) do
-        "  13/07/2020 || £5.00  || ------ || £5.00"
-      end
+    let(:format) do
+      "  13/07/2020 || £5.00  || ------ || £5.00"
+    end
 
-      it 'should print a transaction history' do
-      expect{ statement.format(transaction_history) }.to output(format).to_stdout
-      p statement.format(transaction_history)
+    it 'should print a transaction history' do
+      expect { statement.format(transaction_history) }.to output(format).to_stdout
     end
   end
 end
