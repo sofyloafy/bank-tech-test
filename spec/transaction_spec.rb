@@ -3,7 +3,7 @@ require_relative '../lib/transaction'
 
 describe Transaction do
   let(:transaction) { Transaction.new }
-  let(:time) { Time.now.strftime("%d/%m/%Y")}
+  let(:time) { Time.now.strftime("%d/%m/%Y") }
 
   it 'should start with a balance of 0' do
     expect(Transaction::OPENING_BALANCE).to eq 0
@@ -25,6 +25,6 @@ describe Transaction do
   end
 
   it 'should return a transaction history' do
-    expect(transaction.deposit_confirm(5)).to eq [{:balance=>"£0.00", :credit=>"£5.00", :date=> time, :debit=>"------"}]
+    expect(transaction.deposit_confirm(5)).to eq [{ :balance => "£0.00", :credit => "£5.00", :date => time, :debit => "------" }]
   end
 end

@@ -17,13 +17,12 @@ class Transaction
     @balance -= amount
   end
 
-
   def deposit_confirm(amount)
     transaction = {
-      date: Time.now.strftime("%d/%m/%Y"),
-      credit: sprintf("£%2.2f", amount),
+      date: Time.now.strftime('%d/%m/%Y'),
+      credit: format('£%<amount>.2f', amount: amount),
       debit: '------',
-      balance: sprintf("£%2.2f", @balance)
+      balance: format('£%<balance>.2f', balance: @balance)
     }
     transaction_history.push(transaction)
   end
