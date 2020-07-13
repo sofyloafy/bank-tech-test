@@ -1,4 +1,5 @@
 class BankAccount
-  def initialize(transactions)
+  attr_reader :transactions, :statement
+  def initialize(transactions, statement)
   end
 end
