@@ -10,5 +10,13 @@ describe Transaction do
 
   it 'should be able to deposit money' do
     expect(transaction.deposit(5)).to eq 5
+    transaction.deposit(6)
+    expect(transaction.deposit(8)).to eq 19
+  end
+
+  it 'should be able to withdraw money' do
+    transaction.deposit(6)
+    expect(transaction.withdraw(5)).to eq 1
   end
 end
+
