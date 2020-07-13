@@ -9,12 +9,24 @@ class Transaction
 
   def deposit(amount)
     @balance += amount
-    p @balance
   end
 
   def withdraw(amount)
     raise 'Your funds are insufficient' if @balance < amount
+    
     @balance -= amount
-    p @balance
+  end
+
+
+  def deposit_confirm(amount)
+    transaction = {
+      date: Time.now.strftime("%d/%m/%Y"),
+      credit: sprintf("£%2.2f", amount),
+      debit: '------',
+      balance: sprintf("£%2.2f", @balance)
+    }
+    p transaction_history
+    transaction_history.push(transaction)
+    p transaction_history
   end
 end

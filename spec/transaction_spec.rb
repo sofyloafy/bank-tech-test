@@ -20,6 +20,10 @@ describe Transaction do
   end
 
   it 'should prevent withdrawal if funds are insufficient' do
-    expect{ transaction.withdraw(5) }.to raise_error 'Your funds are insufficient'
+    expect { transaction.withdraw(5) }.to raise_error 'Your funds are insufficient'
+  end
+
+  it 'should return a transaction history' do
+    expect(transaction.deposit_confirm(5)).to eq [{:balance=>"£0.00", :credit=>"£5.00", :date=>"13/07/2020", :debit=>"------"}]
   end
 end
