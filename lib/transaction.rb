@@ -9,12 +9,13 @@ class Transaction
 
   def deposit(amount)
     @balance += amount
+    deposit_confirm(amount)
   end
 
   def withdraw(amount)
     raise 'Your funds are insufficient' if @balance < amount
-    
     @balance -= amount
+    withdraw_confirm(amount)
   end
 
   def deposit_confirm(amount)
