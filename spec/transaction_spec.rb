@@ -10,12 +10,12 @@ describe Transaction do
   end
 
   it 'should be able to deposit money' do
-    expect(transaction.deposit(5)).to eq [{:balance=>"£5.00", :credit=>"£5.00", :date=> time, :debit=>"------"}]
+    expect(transaction.deposit(5)).to eq [{ :balance => "£5.00", :credit => "£5.00", :date => time, :debit => "------" }]
   end
 
   it 'should be able to withdraw money' do
     transaction.deposit(6)
-    expect(transaction.withdraw(5)[1]).to eq({:date=>"13/07/2020", :credit=>"------", :debit=>"£5.00", :balance=>"£1.00"})
+    expect(transaction.withdraw(5)[1]).to eq({ :date => time, :credit => "------", :debit => "£5.00", :balance => "£1.00" })
   end
 
   it 'should prevent withdrawal if funds are insufficient' do
