@@ -26,4 +26,15 @@ class Transaction
     }
     transaction_history.push(transaction)
   end
+
+  def withdraw_confirm(amount)
+    transaction = {
+      date: Time.now.strftime('%d/%m/%Y'),
+      credit: '------',
+      debit: format('£%<amount>.2f', amount: amount),
+      balance: format('£%<balance>.2f', balance: @balance)
+    }
+    transaction_history.push(transaction)
+    p transaction_history
+  end
 end
