@@ -16,12 +16,21 @@
           1,
           null,
           1,
+          2,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
       "/Users/sophiebrown/Projects/Week-10/bank-tech-test/lib/statement.rb": {
         "lines": [
           1,
+          null,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -109,6 +118,6 @@
         ]
       }
     },
-    "timestamp": 1594651526
+    "timestamp": 1594651748
   }
 }
