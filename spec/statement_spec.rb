@@ -12,11 +12,11 @@ describe Statement do
 
   describe '#format' do
     let(:format) do
-      "  13/07/2020 || £5.00  || ------ || £5.00"
+      "\" Date      || Credit || Debit || Balance\"\n  13/07/2020 || £5.00  || ------ || £5.00  \n"
     end
 
-    it 'should print a transaction history' do
-      expect { statement.format(transaction_history) }.to output(format).to_stdout
-    end
+      it 'should print a transaction history' do
+        expect { statement.format(transaction_history) }.to output(format).to_stdout
+      end
   end
 end

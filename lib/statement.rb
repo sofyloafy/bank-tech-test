@@ -1,12 +1,13 @@
-require './transaction'
+require_relative './transaction'
 
 class Statement
   def format(transaction_history)
-    transaction_history.reverse_each do |transaction|
+    p header
+    transaction_history.each do |transaction|
       print "  #{transaction[:date]} ||",
             " #{transaction[:credit]}  ||",
             " #{transaction[:debit]} ||",
-            " #{transaction[:balance]}"
+            " #{transaction[:balance]}  \n"
     end
   end
 
