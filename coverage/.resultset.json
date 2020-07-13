@@ -17,7 +17,15 @@
           null,
           1,
           1,
+          null,
           1,
+          1,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
           null,
           null
         ]
@@ -25,10 +33,15 @@
       "/Users/sophiebrown/Projects/Week-10/bank-tech-test/lib/transaction.rb": {
         "lines": [
           1,
+          1,
+          null,
+          1,
+          0,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1594635822
+    "timestamp": 1594636316
   }
 }
