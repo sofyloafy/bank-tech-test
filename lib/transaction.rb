@@ -14,6 +14,7 @@ class Transaction
 
   def withdraw(amount)
     raise 'Your funds are insufficient' if @balance < amount
+    
     @balance -= amount
     withdraw_confirm(amount)
   end
