@@ -9,8 +9,26 @@
           null,
           null
         ]
+      },
+      "/Users/sophiebrown/Projects/Week-10/bank-tech-test/spec/transaction_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/sophiebrown/Projects/Week-10/bank-tech-test/lib/transaction.rb": {
+        "lines": [
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1594635384
+    "timestamp": 1594635822
   }
 }
