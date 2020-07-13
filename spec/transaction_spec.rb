@@ -8,9 +8,7 @@ describe Transaction do
     expect(Transaction::OPENING_BALANCE).to eq 0
   end
 
-  xit 'should be able to withdraw' do
-    transaction.balance = 0
-    transaction.deposit(5)
-    expect(transaction.balance).to eq 5
+  it 'should be able to deposit money' do
+    expect(transaction.deposit(5)).to eq 5
   end
-end 
+end
