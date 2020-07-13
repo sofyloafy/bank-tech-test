@@ -25,8 +25,6 @@ class Transaction
       debit: '------',
       balance: sprintf("£%2.2f", @balance)
     }
-    p transaction_history
     transaction_history.push(transaction)
-    p transaction_history
   end
 end
