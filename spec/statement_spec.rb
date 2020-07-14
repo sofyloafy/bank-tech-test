@@ -7,12 +7,12 @@ describe Statement do
   let(:transaction_history) { [{ :balance => "£5.00", :credit => "£5.00", :date => date, :debit => "------" }] }
 
   it 'should print a header' do
-    expect(statement.header).to eq " Date      || Credit || Debit || Balance"
+    expect(statement.header).to eq " Date      || Credit || Debit || Balance \n"
   end
 
   describe '#format' do
     let(:format) do
-      "\" Date      || Credit || Debit || Balance\"\n  #{date} || £5.00  || ------ || £5.00  \n"
+      " Date      || Credit || Debit || Balance \n  #{date} || £5.00  || ------ || £5.00  \n"
     end
 
     it 'should print a transaction history' do

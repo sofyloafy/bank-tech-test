@@ -10,7 +10,7 @@ class Transaction
   def deposit(amount)
     @balance += amount
     deposit_confirm(amount)
-    return nil
+    "You have deposited £#{amount}"
   end
 
   def withdraw(amount)
@@ -18,7 +18,7 @@ class Transaction
 
     @balance -= amount
     withdraw_confirm(amount)
-    return nil
+    "You have withdrawn £#{amount}"
   end
 
   def deposit_confirm(amount)
