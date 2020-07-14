@@ -7,7 +7,7 @@ class Statement
       print "  #{transaction[:date]} ||",
             " #{transaction[:credit]}  ||",
             " #{transaction[:debit]} ||",
-            " #{transaction[:balance]}  \n"
+            " #{transaction[:balance]} "
     end
   end
 

@@ -2,9 +2,7 @@ require 'spec_helper'
 require_relative '../lib/bank_account'
 
 describe BankAccount do
-  let(:transaction) { Transaction.new }
-  let(:statement) { Statement.new }
-  let(:bank_account) { BankAccount.new(transaction, statement) }
+  let(:bank_account) { BankAccount.new(Transaction.new, Statement.new) }
   let(:date) { Time.now.strftime('%d/%m/%Y') }
   let(:withdrawal_transaction) { [{ :balance => "£20.00", :credit => "£20.00", :date => date,
   :debit => "------" }, { :balance => "£15.00", :credit => "------", :date => date, :debit => "£5.00" }] 
@@ -30,11 +28,11 @@ describe BankAccount do
 
   describe 'print_statement' do
     let(:format) do
-      " Date      || Credit || Debit || Balance \n  #{date} || £5.00  || ------ || £5.00  \n"
+      " Date      || Credit || Debit || Balance \n  #{date} || £5.00  || ------ || £5.00 "
     end
 
     let(:format_2) do
-      " Date      || Credit || Debit || Balance \n  #{date} || £2.00  || ------ || £7.00  \n  #{date} || £5.00  || ------ || £5.00  \n"
+      " Date      || Credit || Debit || Balance \n  #{date} || £2.00  || ------ || £7.00   #{date} || £5.00  || ------ || £5.00 "
     end
 
     it "should print transactions in a user friendly-format" do

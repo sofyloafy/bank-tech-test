@@ -108,8 +108,6 @@
           null,
           1,
           7,
-          7,
-          7,
           3,
           1,
           null,
@@ -158,7 +156,6 @@
       },
       "/Users/sophiebrown/Projects/Week-10/bank-tech-test/spec/statement_spec.rb": {
         "lines": [
-          1,
           1,
           null,
           1,
@@ -221,6 +218,6 @@
         ]
       }
     },
-    "timestamp": 1594728897
+    "timestamp": 1594730854
   }
 }
