@@ -34,4 +34,19 @@ describe BankAccount do
     :date=>"14/07/2020",
     :debit=>"------"}]
   end
+
+  it "should print the user-friendly statement in reverse order" do
+    bank_account.deposit(20)
+    bank_account.withdraw(10)
+    expect(bank_account.print_statement).to eq  [
+        {:balance=>"£20.00",
+        :credit=>"£20.00",
+        :date=>"14/07/2020",
+        :debit=>"------"},
+        {:balance=>"£10.00",
+        :credit=>"------",
+        :date=>"14/07/2020",
+        :debit=>"£10.00"}
+      ]
+  end
 end
