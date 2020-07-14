@@ -45,14 +45,18 @@ date || credit || debit || balance
 
 1. Clone this repo
 2. Bundle install
-3. Launch irb
-4. Once in irb, type in:
+3. You can run the tests at any time:
+```
+rspec
+```
+4. Launch irb
+5. Once in irb, type in:
 ```
 require './lib/bank_account'
 
 account = BankAccount.new(Transaction.new, Statement.new)
 ```
-5. You can then withdraw, deposit, and see your statement!
+6. You can then withdraw, deposit, and see your statement!
 ```
 account.deposit(1000)
 account.withdraw(500)
