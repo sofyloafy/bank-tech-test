@@ -10,9 +10,7 @@ Jump to:
 * User can create a new bank account
 * User can deposit any sum
 * User can withdraw any sum, funds-permitting
-* User can view their statement in the below format:
-
-![](./images/irb_example.png)
+* User can view their statement in a user-friendly format
 * The statement is reverse-ordered
 
 
