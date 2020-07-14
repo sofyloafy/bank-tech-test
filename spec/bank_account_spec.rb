@@ -26,4 +26,12 @@ describe BankAccount do
     bank_account.deposit(20)
     expect(bank_account.withdraw(5)).to eq withdrawal_transaction
   end
+
+  it "should print transactions in a user friendly-format" do
+    bank_account.deposit(20)
+    expect(bank_account.print_statement).to eq  [{:balance=>"£20.00",
+    :credit=>"£20.00",
+    :date=>"14/07/2020",
+    :debit=>"------"}]
+  end
 end
