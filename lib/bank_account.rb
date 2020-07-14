@@ -10,6 +10,8 @@ class BankAccount
   end
 
   def deposit(amount)
+    raise 'Please input a number' if amount != Integer
+
     transaction.deposit(amount)
   end
 

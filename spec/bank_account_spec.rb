@@ -10,4 +10,8 @@ describe BankAccount do
     allow(bank_account.transaction.deposit(6))
     expect(bank_account.transaction.deposit(6)).to eq 6
   end
+
+  it "should reject anything but an integer" do
+    expect{ bank_account.deposit('cat') }.to raise_error 'Please input a number'
+  end
 end
