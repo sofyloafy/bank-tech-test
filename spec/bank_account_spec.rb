@@ -10,7 +10,11 @@ describe BankAccount do
     expect(bank_account.transaction.deposit(6)).to eq [{:balance=>"£6.00", :credit=>"£6.00", :date=>"14/07/2020", :debit=>"------"}]
   end
 
-  it "should reject anything but an integer" do
+  it "should reject deposit input unless an integer" do
     expect{ bank_account.deposit('cat') }.to raise_error 'Please input a number'
+  end
+
+  it "should reject withdrawal input unless an integer" do
+    expect{ bank_account.withdraw('cat') }.to raise_error 'Please input a number'
   end
 end
