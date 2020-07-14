@@ -10,6 +10,7 @@ Jump to:
 * [Testing](https://github.com/sofyloafy/bank-tech-test#testing)
 * [Approach](https://github.com/sofyloafy/bank-tech-test#approach)
 
+
 ### Challenge progress overview:
 * User can create a new bank account
 * User can deposit any sum
@@ -68,5 +69,3 @@ account.print_statement
 * Rubocop to ensure good linting and only consistent code was created. This included the customisation of the Rubocop preferences so that it was fit for purpose.
 * SimpleCov was used to safeguard against spiking and unsustainable code.
 
-## Approach
-* I began by dividing the responsibilities, and trying to understand how they could be spread across classes. I landed on 3 classes, one to handle transactions, Transaction, one to handle formatting of those transactions into a statement, Statement, and one to implement and execute the two previous classes, BankAccount.

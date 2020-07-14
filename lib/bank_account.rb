@@ -4,13 +4,13 @@ require_relative './statement'
 class BankAccount
   attr_reader :transaction, :statement
 
-  def initialize(transaction, statement)
+  def initialize(transaction= Transaction.new, statement = Statement.new)
     @transaction = transaction
     @statement = statement
   end
 
   def deposit(amount)
-    number(amount)
+    raise 'Please input a number' unless amount.is_a? Integer
 
     transaction.deposit(amount)
   end
@@ -26,7 +26,9 @@ class BankAccount
     return nil
   end
 
-  def number(amount)
-    raise 'Please input a number' unless amount.is_a? Integer
+  private 
+  
+  def number?
+    raise 'Please input a number' unless @amount.is_a? Integer
   end
 end

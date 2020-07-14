@@ -21,6 +21,8 @@ class Transaction
     "You have withdrawn £#{amount}"
   end
 
+  private 
+  
   def deposit_confirm(amount)
     transaction = {
       date: Time.now.strftime('%d/%m/%Y'),
