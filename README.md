@@ -8,7 +8,7 @@ Jump to:
 * [Specification](https://github.com/sofyloafy/bank-tech-test#specification)
 * [Quick Start](https://github.com/sofyloafy/bank-tech-test#quick-start)
 * [Testing](https://github.com/sofyloafy/bank-tech-test#testing)
-* [Approach]()https://github.com/sofyloafy/bank-tech-test#approach
+* [Approach](https://github.com/sofyloafy/bank-tech-test#approach)
 
 ### Challenge progress overview:
 * User can create a new bank account
