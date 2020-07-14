@@ -12,7 +12,7 @@ describe Statement do
 
   describe '#format' do
     let(:format) do
-      "\" Date      || Credit || Debit || Balance\"\n  13/07/2020 || £5.00  || ------ || £5.00  \n"
+      "\" Date      || Credit || Debit || Balance\"\n  #{date} || £5.00  || ------ || £5.00  \n"
     end
 
     it 'should print a transaction history' do
