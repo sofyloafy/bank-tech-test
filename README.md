@@ -38,3 +38,11 @@ date || credit || debit || balance
 13/01/2012 || 2000.00 || || 3000.00
 10/01/2012 || 1000.00 || || 1000.00
 ```
+
+## Quick Start
+
+1. Clone this repo
+2. Bundle install
+3. Launch irb
+4. require './lib/bank_account'
+5. Open a bank account with account = BankAccount.new(Transaction.new, Statement.new)

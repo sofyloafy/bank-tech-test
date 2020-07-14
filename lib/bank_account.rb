@@ -23,5 +23,6 @@ class BankAccount
 
   def print_statement
     statement.format(transaction.transaction_history)
+    return nil
   end
 end
