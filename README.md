@@ -4,6 +4,7 @@
 
 Jump to:
 * [Specification](https://github.com/sofyloafy/bank-tech-test#specification)
+* [Quick Start](https://github.com/sofyloafy/bank-tech-test#quick_start)
 
 ### Challenge progress overview:
 * User can create a new bank account
@@ -44,5 +45,15 @@ date || credit || debit || balance
 1. Clone this repo
 2. Bundle install
 3. Launch irb
-4. require './lib/bank_account'
-5. Open a bank account with account = BankAccount.new(Transaction.new, Statement.new)
+4. Once in irb, type in:
+```
+require './lib/bank_account'
+
+account = BankAccount.new(Transaction.new, Statement.new)
+```
+5. You can then withdraw, deposit, and see your statement!
+```
+account.deposit(1000)
+account.withdraw(500)
+account.print_statement
+```

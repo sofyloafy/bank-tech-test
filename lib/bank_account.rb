@@ -10,7 +10,7 @@ class BankAccount
   end
 
   def deposit(amount)
-    raise 'Please input a number' unless amount.is_a? Integer
+    number(amount)
 
     transaction.deposit(amount)
   end
@@ -24,5 +24,9 @@ class BankAccount
   def print_statement
     statement.format(transaction.transaction_history)
     return nil
+  end
+
+  def number(amount)
+    raise 'Please input a number' unless amount.is_a? Integer
   end
 end
