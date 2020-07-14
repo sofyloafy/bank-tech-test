@@ -1,10 +1,13 @@
 # Bank Tech Test - Ruby
 
+
+
 <i>Please find source spec [here](https://github.com/makersacademy/course/blob/master/individual_challenges/bank_tech_test.md)</i>
 
 Jump to:
 * [Specification](https://github.com/sofyloafy/bank-tech-test#specification)
 * [Quick Start](https://github.com/sofyloafy/bank-tech-test#quick-start)
+* [Testing](https://github.com/sofyloafy/bank-tech-test#testing)
 
 ### Challenge progress overview:
 * User can create a new bank account
@@ -55,3 +58,8 @@ account.deposit(1000)
 account.withdraw(500)
 account.print_statement
 ```
+## Testing
+* I installed RSpec to test the programme, which included a feature test to test the overall functionality of the irb app.
+* Rubocop to ensure good linting and only consistent code was created. This included the customisation of the Rubocop preferences so that it was fit for purpose.
+* SimpleCov was used to safeguard against spiking and unsustainable code.
+
