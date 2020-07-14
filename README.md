@@ -8,7 +8,6 @@ Jump to:
 * [Specification](https://github.com/sofyloafy/bank-tech-test#specification)
 * [Quick Start](https://github.com/sofyloafy/bank-tech-test#quick-start)
 * [Testing](https://github.com/sofyloafy/bank-tech-test#testing)
-* [Approach](https://github.com/sofyloafy/bank-tech-test#approach)
 
 
 ### Challenge progress overview:
@@ -69,3 +68,7 @@ account.print_statement
 * Rubocop to ensure good linting and only consistent code was created. This included the customisation of the Rubocop preferences so that it was fit for purpose.
 * SimpleCov was used to safeguard against spiking and unsustainable code.
 
+## Approach
+* I decided to split the responsibilities across 3 classes, which are Transaction, for handling transactions, Statement, to format the user-friendly statement, and BankAccount, which converges the two.
+* I wanted to ensure that SRP was maintained, and that responsibility was shared evenly among the classes.
+* This irb programme was made with the assumption that the user cannot go over-drawn. If they attempt to withdraw more funds than they have, they will be notified of their insufficient funds.

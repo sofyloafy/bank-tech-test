@@ -25,10 +25,4 @@ class BankAccount
     statement.format(transaction.transaction_history)
     return nil
   end
-
-  private 
-  
-  def number?
-    raise 'Please input a number' unless @amount.is_a? Integer
-  end
 end
